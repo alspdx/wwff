@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #5db4d2;
+}
+
+.wrapper {
+
+  width: 95%;
+  max-width: 1600px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar {
+  width: 30%;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  max-width: 100%;
+  padding: 0 20px 10px 20px;
+}
+
+.links {
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.links li {
+  color: #707247;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+}
+
+.links li:hover {
+  font-size: 20px;
+}
+
+.main {
+  width: 66%;
+  margin-left: 4%;
+  float: right;
+  padding: 15px;
+}
+
+.main p {
+  padding: 40px 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#baberaham-lincoln {
+  width: 100%;
+  position: relative;
+}
+
+.main p {
+  margin-top: 24px;
+}
+
+.gallery ul {
+  display: inline;
+  list-style: none;
+}
+
+.gallery li img{
+  float: left;
+  width: 31%;
+  margin: 2em 3.5% 0 0;
+}
+
+#basement3, #basement6 {
+  margin-right: 0;
+}
+
+/*@media screen and (min-width: 1600px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}*/
+
+@media screen and (max-width:600px) {
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+    float: none;
+    padding: 15px;
+  }
+
+  .gallery li img{
+    width: 48.25%;
+  }
+
+  #basement1, #basement3, #basement5 {
+    margin-right: 3.5%;
+  }
+
+  #basement2, #basement4, #basement6 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .gallery li img {
+    width: 100%;
+  }
+
+  #basement1, #basement2, #basement3, #basement4, #basement5, #basement6 {
+    margin-right: 0;
+  }
+}
